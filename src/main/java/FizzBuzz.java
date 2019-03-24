@@ -1,10 +1,9 @@
 import JSON.Item;
+import menu.MyMenu;
+import parameter.Parameter;
 
 import java.util.List;
 import java.util.stream.Collectors;
-
-import menu.MyMenu;
-import parameter.Parameter;
 
 public class FizzBuzz {
     public static void execute(MyMenu menu, Parameter params) {

@@ -14,7 +14,7 @@ public class FoodMenu implements MyMenu {
     }
 
     @Override
-    public double getAddFeePriceScale(){
+    public double getAddFeePriceScale() {
         return addFeePriceScale;
     }
 

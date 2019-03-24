@@ -1,5 +1,10 @@
 package menu;
 
+import JSON.Item;
+import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import parameter.SystemProvider;
+
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
@@ -7,15 +12,10 @@ import java.nio.file.Paths;
 import java.util.List;
 import java.util.stream.Collectors;
 
-import JSON.Item;
-import com.fasterxml.jackson.core.type.TypeReference;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import parameter.SystemProvider;
-
 public interface MyMenu {
-    public double getAddFeePriceScale();
+    double getAddFeePriceScale();
 
-    public List<Item> addFeeMenu();
+    List<Item> addFeeMenu();
 
     default List<Item> addFee(List<Item> menu) {
         menu.stream().map(item -> {

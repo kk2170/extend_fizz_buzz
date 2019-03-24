@@ -1,7 +1,8 @@
 package menu;
 
-import java.util.List;
 import JSON.Item;
+
+import java.util.List;
 
 public class AlcoholMenu implements MyMenu {
     public static final double addFeePriceScale = 1.1;
@@ -13,7 +14,7 @@ public class AlcoholMenu implements MyMenu {
     }
 
     @Override
-    public double getAddFeePriceScale(){
+    public double getAddFeePriceScale() {
         return addFeePriceScale;
     }
 

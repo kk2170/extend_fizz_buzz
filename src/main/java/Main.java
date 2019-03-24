@@ -1,11 +1,10 @@
-import java.util.List;
-
 import menu.AlcoholMenu;
 import menu.FoodMenu;
 import menu.MyMenu;
 import parameter.Parameter;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Main {
 
@@ -17,10 +16,9 @@ public class Main {
         menuList.add(new AlcoholMenu());
         menuList.add(new FoodMenu());
 
-        for(MyMenu menu: menuList){
+        for (MyMenu menu : menuList) {
             FizzBuzz.execute(menu, params);
         }
     }
-
 
 }

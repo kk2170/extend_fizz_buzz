@@ -34,7 +34,7 @@ public class Parameter {
         y = checkIntValue(arguments[2]);
     }
 
-    private int checkIntValue(String arg){
+    private int checkIntValue(String arg) {
         int value = 0;
 
         try {
