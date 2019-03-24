@@ -1,0 +1,53 @@
+[
+  {
+    "name": "えび餃子",
+    "price": 2892,
+    "category": "和食"
+  },
+  {
+    "name": "漬け物",
+    "price": 887,
+    "category": "和食"
+  },
+  {
+    "name": "フカヒレ",
+    "price": 23985,
+    "category": "中華"
+  },
+  {
+    "name": "大トロ",
+    "price": 3876,
+    "category": "和食"
+  },
+  {
+    "name": "チャーハン",
+    "price": 1299,
+    "category": "中華"
+  },
+  {
+    "name": "酢豚",
+    "price": 1099,
+    "category": "中華"
+  },
+  {
+    "name": "鯛茶漬け",
+    "price": 3866,
+    "category": "和食"
+  },
+  {
+    "name": "春巻き",
+    "price": 3340,
+    "category": "中華"
+  },
+  {
+    "name": "さんま塩焼",
+    "price": 1044,
+    "category": "和食"
+  },
+  {
+    "name": "うなぎ蒲焼",
+    "price": 4511,
+    "category": "和食"
+  }
+]
+

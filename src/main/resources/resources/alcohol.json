@@ -1,0 +1,53 @@
+[
+  {
+    "name": "モンラッシェ",
+    "price": 10380,
+    "category": "和食"
+  },
+  {
+    "name": "シャトー・タルボ",
+    "price": 21276,
+    "category": "和食"
+  },
+  {
+    "name": "ジャック・セロス",
+    "price": 50381,
+    "category": "中華"
+  },
+  {
+    "name": "オーパスワン",
+    "price": 63067,
+    "category": "和食"
+  },
+  {
+    "name": "青島ビール",
+    "price": 480,
+    "category": "中華"
+  },
+  {
+    "name": "パンクIPA",
+    "price": 999,
+    "category": "中華"
+  },
+  {
+    "name": "エビスビール",
+    "price": 885,
+    "category": "和食"
+  },
+  {
+    "name": "アードベックソーダ",
+    "price": 1452,
+    "category": "中華"
+  },
+  {
+    "name": "アマレットジンジャー",
+    "price": 2123,
+    "category": "和食"
+  },
+  {
+    "name": "ラスティーネイル",
+    "price": 3178,
+    "category": "和食"
+  }
+]
+
