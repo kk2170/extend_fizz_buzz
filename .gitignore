@@ -26,4 +26,3 @@ hs_err_pid*
 
 .gradle/
 .idea/
-src/test/
