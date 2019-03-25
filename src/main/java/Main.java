@@ -22,7 +22,6 @@ public class Main {
         for (MyMenu menu : menuList) {
             if (menu != null) {
                 FizzBuzz fizzBuzz = new FizzBuzz(menu, params);
-                fizzBuzz.filterByCategory();
                 fizzBuzz.execute();
             }
         }

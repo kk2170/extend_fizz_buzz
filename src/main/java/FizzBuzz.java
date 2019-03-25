@@ -18,14 +18,14 @@ public class FizzBuzz {
         y = parameter.getY();
     }
 
-    public void filterByCategory() {
-        list = list.stream().filter(f -> f.category.equals(category))
+    private List<Item> filterByCategory() {
+         return list.stream().filter(f -> f.category.equals(category))
                 .collect(Collectors.toList());
     }
 
     public void execute() {
-
-        for (Item item : list) {
+        List<Item> filteredList = filterByCategory();
+        for (Item item : filteredList) {
             boolean isDivisibleByX = item.price % x == 0;
             boolean isDivisibleByY = item.price % y == 0;
 
