@@ -22,7 +22,7 @@ public class Parameter {
         return y;
     }
 
-    public void check() {
+    public void checkAndSetValue() {
         if (arguments.length != ARGUMENTS_LENGTH) {
             System.out.println("引数を3個以上選択してください。");
             isInvalid = true;
