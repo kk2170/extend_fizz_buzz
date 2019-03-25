@@ -11,13 +11,20 @@ public class Main {
     public static void main(String[] args) {
 
         Parameter params = new Parameter(args);
-
+        params.check();
+        if (params.isInvalid()) {
+            System.exit(1);
+        }
         List<MyMenu> menuList = new ArrayList<>();
         menuList.add(new AlcoholMenu());
         menuList.add(new FoodMenu());
 
         for (MyMenu menu : menuList) {
-            FizzBuzz.execute(menu, params);
+            if (menu != null) {
+                FizzBuzz fizzBuzz = new FizzBuzz(menu, params);
+                fizzBuzz.filterByCategory();
+                fizzBuzz.execute();
+            }
         }
     }
 

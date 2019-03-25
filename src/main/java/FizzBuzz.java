@@ -6,13 +6,28 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public class FizzBuzz {
-    public static void execute(MyMenu menu, Parameter params) {
-        List<Item> list = menu.addFeeMenu().stream().filter(f -> f.category.equals(params.getCategory()))
+    private List<Item> list;
+    private String category;
+    private int x;
+    private int y;
+
+    public FizzBuzz(MyMenu menu, Parameter parameter) {
+        list = menu.addFeeMenu();
+        category = parameter.getCategory();
+        x = parameter.getX();
+        y = parameter.getY();
+    }
+
+    public void filterByCategory() {
+        list = list.stream().filter(f -> f.category.equals(category))
                 .collect(Collectors.toList());
+    }
+
+    public void execute() {
 
         for (Item item : list) {
-            boolean isDivisibleByX = item.price % params.getX() == 0;
-            boolean isDivisibleByY = item.price % params.getY() == 0;
+            boolean isDivisibleByX = item.price % x == 0;
+            boolean isDivisibleByY = item.price % y == 0;
 
             if (isDivisibleByX && isDivisibleByY) {
                 System.out.println("FizzBuzz");

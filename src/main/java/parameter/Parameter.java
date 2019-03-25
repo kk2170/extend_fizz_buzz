@@ -2,15 +2,15 @@ package parameter;
 
 public class Parameter {
     public static int ARGUMENTS_LENGTH = 3;
-    SystemProvider systemProvider = new SystemProvider();
     String[] arguments;
     String category;
+    boolean isInvalid;
     int x;
     int y;
 
     public Parameter(String[] args) {
         arguments = args;
-        check();
+        isInvalid = false;
     }
 
 
@@ -25,7 +25,8 @@ public class Parameter {
     public void check() {
         if (arguments.length != ARGUMENTS_LENGTH) {
             System.out.println("引数を3個以上選択してください。");
-            systemProvider.errorExit();
+            isInvalid = true;
+            return;
         }
 
         category = arguments[0];
@@ -42,17 +43,20 @@ public class Parameter {
         } catch (NumberFormatException e) {
             System.out.println("引数に数字以外が入力されています。");
             e.printStackTrace();
-            systemProvider.errorExit();
+            isInvalid = true;
         }
 
         if (value <= 0) {
             System.out.println("引数には1以上の数字を入力してください。");
-            systemProvider.errorExit();
+            isInvalid = true;
         }
 
         return value;
     }
 
+    public boolean isInvalid() {
+        return isInvalid;
+    }
 
     public String getCategory() {
         return category;

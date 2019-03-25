@@ -3,7 +3,6 @@ package menu;
 import JSON.Item;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import parameter.SystemProvider;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -53,10 +52,8 @@ public interface MyMenu {
             addFee(menu);
         } catch (IOException e) {
             e.printStackTrace();
-            new SystemProvider().errorExit();
         } catch (URISyntaxException e) {
             e.printStackTrace();
-            new SystemProvider().errorExit();
         }
         return menu;
     }
