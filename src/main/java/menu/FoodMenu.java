@@ -6,7 +6,7 @@ import java.util.List;
 
 public class FoodMenu implements MyMenu {
     public static final double addFeePriceScale = 1.0;
-    public static final String pathName = "food.json";
+    public static final String pathName = "/food.json";
     private List<Item> menu;
 
     public FoodMenu() {

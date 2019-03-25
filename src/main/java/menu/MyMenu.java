@@ -29,7 +29,7 @@ public interface MyMenu {
         List<Item> menu = null;
         try {
             String jsonString;
-            InputStream in = getClass().getResourceAsStream("/" + pathName);
+            InputStream in = getClass().getResourceAsStream(pathName);
             BufferedReader reader = new BufferedReader(new InputStreamReader(in));
             jsonString = reader.lines().collect(Collectors.joining());
 

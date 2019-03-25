@@ -6,7 +6,7 @@ import java.util.List;
 
 public class AlcoholMenu implements MyMenu {
     public static final double addFeePriceScale = 1.1;
-    public static final String pathName = "alcohol.json";
+    public static final String pathName = "/alcohol.json";
     private List<Item> menu;
 
     public AlcoholMenu() {
